@@ -31,6 +31,11 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+wallet_balance = int(input("How much do you have in your wallet?"))
+item_price = int(input("How much is the item? "))
+change_available = wallet_balance > item_price
+print(f"I can afford this: {wallet_balance >= item_price}")
+print(f"Do I have change? {change_available}")
 
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
@@ -46,6 +51,11 @@ print("\n-------------------------------------------\n"
 # 4. Print a Boolean check using '!=' (not equal) to confirm they are indeed different strings.
 
 # Write your code below:
+
+username = "admin"
+input_name = "Admin"
+print(f"Are they match? {username == input_name}")
+print(f"They don't match. {username != input_name}")
 
 
 # -------------------------------------------
@@ -64,6 +74,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+age = int(input("How old are you? "))
+can_enter = age >= 18
+print(f"Access granted: {can_enter}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
@@ -76,6 +89,7 @@ print("\n-------------------------------------------\n"
 #    git commit -m "Completed core boolean tasks"
 #    git push origin main
 # -------------------------------------------
+
 
 
 # -------------------------------------------
