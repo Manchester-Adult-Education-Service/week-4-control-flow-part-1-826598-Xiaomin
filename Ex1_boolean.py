@@ -31,6 +31,11 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+wallet_balance = int(input("How much do you have in your wallet? "))
+item_price = int(input("How much is the item? "))
+change_available = wallet_balance > item_price
+print(f"I can afford this: {wallet_balance >= item_price}")
+print(f"Do I have change? {change_available}")
 
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
@@ -46,6 +51,11 @@ print("\n-------------------------------------------\n"
 # 4. Print a Boolean check using '!=' (not equal) to confirm they are indeed different strings.
 
 # Write your code below:
+
+username = "admin"
+input_name = "Admin"
+print(f"Are they match? {username == input_name}")
+print(f"They don't match. {username != input_name}")
 
 
 # -------------------------------------------
@@ -64,6 +74,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+age = int(input("How old are you? "))
+can_enter = age >= 18
+print(f"Access granted: {can_enter}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
@@ -76,6 +89,7 @@ print("\n-------------------------------------------\n"
 #    git commit -m "Completed core boolean tasks"
 #    git push origin main
 # -------------------------------------------
+
 
 
 # -------------------------------------------
@@ -98,6 +112,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+number = int(input(f"Enter a random number please. "))
+valid = number > 0 and number <= 10
+print(f"Is the number valid? {valid}")
 
 # Extension 2: The "Either/Or" (The 'or' Operator)
 # -------------------------------------------
@@ -116,6 +133,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+favourite_colour = input("What is your favourite colour? ").capitalize()
+valid_colour = (favourite_colour == "Red") or (favourite_colour == "Blue")
+print(f"Is the colour red or blue? {valid_colour}")
 
 # Extension 3: Even Number Detector (Modulus %)
 # -------------------------------------------
@@ -132,6 +152,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+number_1 = int(input("Give me a number please. "))
+remainder = number_1 % 2
+print(f"is the remainder equals 0? {remainder == 0}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
@@ -176,6 +199,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+enter_year =int(input("Enter a year please. "))
+is_leap_year = (enter_year % 4 == 0 and enter_year % 100 != 0) or (enter_year % 4 == 0 and enter_year % 400 == 0)
+print(f"Is leap year: {is_leap_year}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
